@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import "./varibalse.scss";
+main {
+  width: 100%;
+}
+.inputs {
+  background: #ffffff;
+  border-radius: 40px;
+  margin: 0 10px 0 10px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tittle__items {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #596172;
+
+  margin-right: 10px;
+}
+
+.input__column {
+  flex: 0 1 25%;
+  padding: 50px;
+}
+.input__tittle--row {
+  display: flex;
+}
+.tittle__items--color {
+  font-weight: 300;
+  color: #949fb7;
+  margin-right: 0;
+}
+.container {
+  margin-left: 50px;
+}
+
+.input__type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.type__items:first-child {
+  margin-top: 50px;
+}
+.type__items:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.type {
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  /* 4 */
+
+  color: #c1c8d7;
+}
+.type__column {
+  min-height: 70%;
+  max-width: 100%;
+}
+
+/*---------------Линия---------------------*/
+/*---------------Input---------------------*/
+input[type="text"] {
+  border: 1px solid #d7dff2;
+  padding: 5px 10px 5px 15px;
+  border-radius: 7px;
+}
+input::placeholder {
+  color: #939aab;
+}
+.input--hover:hover {
+  border-color: #abb4cb;
+}
+input {
+  outline: none;
+}
+._input {
+  .input--active:focus {
+    background: #f7f8fa;
+    border: 1px solid #abb4cb;
+  }
+}
+.label__error {
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+  position: absolute;
+  color: #ed6262;
+  top: 130%;
+  left: 11.5%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: normal;
+}
+.input--error {
+  border: 1px solid #ed6262 !important;
+}
+._error {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+input:disabled {
+  border: 1px solid #ebeef5;
+}
+/*-----------------------------------------*/
+.type__items:not(:last-child)::after {
+  content: "";
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+/*--------------------------------------------------------------*/

@@ -21,7 +21,7 @@ main {
 }
 
 .input__column {
-  flex: 0 1 25%;
+  flex: 0 1 33.333%;
   padding: 50px;
 }
 .input__tittle--row {
@@ -64,12 +64,10 @@ main {
   min-height: 70%;
   max-width: 100%;
 }
-
-/*---------------Линия---------------------*/
 /*---------------Input---------------------*/
 input[type="text"] {
   border: 1px solid #d7dff2;
-  padding: 5px 10px 5px 15px;
+  padding: 7px 10px 7px 15px;
   border-radius: 7px;
 }
 input::placeholder {
@@ -78,7 +76,8 @@ input::placeholder {
 .input--hover:hover {
   border-color: #abb4cb;
 }
-input {
+input,
+select {
   outline: none;
 }
 ._input {
@@ -93,8 +92,8 @@ input {
   /* identical to box height */
   position: absolute;
   color: #ed6262;
-  top: 130%;
-  left: 11.5%;
+  top: 110%;
+  left: 12%;
   transform: translate(-50%, -50%);
   mix-blend-mode: normal;
 }
@@ -103,11 +102,17 @@ input {
 }
 ._error {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  padding: 5px;
 }
 input:disabled {
-  border: 1px solid #ebeef5;
+  border-color: #ebeef5;
+  background: none;
+}
+input:disabled::placeholder {
+  color: #c2cde6;
+}
+.input--full:placeholder-shown {
+  border: 1px solid #abb4cb;
 }
 /*-----------------------------------------*/
 .type__items:not(:last-child)::after {
@@ -122,5 +127,96 @@ input:disabled {
 .row {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
-/*--------------------------------------------------------------*/
+input,
+select {
+  display: block;
+  min-width: 200px;
+}
+
+/*--------------------------------------------------------------------*/
+.select {
+  color: #939aab;
+  border: 1px solid #d7dff2;
+  padding: 7px 10px 7px 15px;
+  border-radius: 7px;
+  appearance: none;
+  background: url("../strelka.svg") no-repeat right;
+  background-position-x: calc(100% - 17px);
+}
+.select--hover:hover {
+  background: url("../strelka--hover.svg") no-repeat right;
+  background-position-x: calc(100% - 17px);
+  border-color: #abb4cb;
+}
+.select--active:focus {
+  background: #f7f8fa;
+  border-color: #abb4cb;
+  background: url("../strelka--active.svg") no-repeat right;
+  background-position-x: calc(100% - 17px);
+  color: #0f1b33;
+}
+.select:disabled {
+  border-color: #ebeef5;
+  color: #c2cde6;
+}
+/*-------------------------------password-----------------------------*/
+
+._eye {
+  position: relative;
+}
+.eye {
+  width: 22px;
+  height: 15px;
+  position: absolute;
+  background: url("../eye.svg") no-repeat right;
+  top: 50%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+._eye--hover:hover {
+  .eye--hover {
+    background: url("../eye--hover.svg") no-repeat right !important;
+    top: 50%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
+input[type="password"] {
+  border: 1px solid #d7dff2;
+  padding: 7px 10px 7px 15px;
+  border-radius: 7px;
+}
+.input__password:disabled {
+  border-color: #ebeef5;
+  color: #c2cde6;
+}
+.eye--disabled {
+  background: url("../eye--disabled.svg") no-repeat right !important;
+  top: 50%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+._input {
+  .input__password--active:focus {
+    background: #f7f8fa;
+    border: 1px solid #abb4cb;
+  }
+}
+._column {
+  display: flex;
+  flex-direction: column;
+}
+.eye--off {
+  width: 22px !important;
+  height: 19.15px !important;
+  background: url("../eye--off.svg") no-repeat right !important;
+  top: 50%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}

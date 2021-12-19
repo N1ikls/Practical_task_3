@@ -61,7 +61,7 @@
                     <div class="row _input">
                       <input
                         type="text"
-                        class="input"
+                        class="input input--full"
                         placeholder="Placeholder"
                       />
                     </div>
@@ -84,13 +84,196 @@
                 <div class="type__items">
                   <div class="input__type">
                     <div class="type">Diasabled</div>
-                    <div class="_input">
+                    <div class="row _input">
                       <input
                         type="text"
-                        class="input"
+                        class="input input--disabled"
                         placeholder="Placeholder"
                         disabled
                       />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input__column">
+            <div class="container">
+              <ul class="input__tittle input__tittle--row">
+                <li class="tittle__items">Input</li>
+                <li class="tittle__items tittle__items--color">Selector</li>
+              </ul>
+              <div class="type__column">
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">empty</div>
+                    <div class="row _select">
+                      <select type="text" class="select">
+                        <option value="1">Placeholder 1</option>
+                        <option value="2">Placeholder 2</option>
+                        <option value="3">Placeholder 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">hover</div>
+                    <div class="row _select">
+                      <select type="text" class="select select--hover">
+                        <option value="1">Placeholder 1</option>
+                        <option value="2">Placeholder 2</option>
+                        <option value="3">Placeholder 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">active</div>
+                    <div class="row _select">
+                      <select type="text" class="select select--active">
+                        <option value="1">Placeholder 1</option>
+                        <option value="2">Placeholder 2</option>
+                        <option value="3">Placeholder 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">selector</div>
+                    <div class="row _select">
+                      <select type="text" class="select select--selector">
+                        <option value="1">Placeholder 1</option>
+                        <option value="2">Placeholder 2</option>
+                        <option value="3">Placeholder 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">Diasabled</div>
+                    <div class="row _select">
+                      <select type="text" class="select" disabled>
+                        <option value="1">Placeholder</option>
+                        <option value="2">Placeholder 2</option>
+                        <option value="3">Placeholder 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input__column">
+            <div class="container">
+              <ul class="input__tittle input__tittle--row">
+                <li class="tittle__items">Input</li>
+                <li class="tittle__items tittle__items--color">Password</li>
+              </ul>
+              <div class="type__column">
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">empty</div>
+                    <div class="row _input _eye">
+                      <input
+                        type="password"
+                        class="input input__password"
+                        placeholder="Password"
+                      />
+                      <label class="eye " for="password"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">hover</div>
+                    <div class="row _input _eye _eye--hover">
+                      <input
+                        type="password"
+                        class="
+                          input
+                          input--hover
+                          input__password
+                          input__password--hover
+                        "
+                        placeholder="Password"
+                      />
+                      <label class="eye eye--hover" for="password"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">active</div>
+                    <div class="row _input _eye">
+                      <input
+                        type="password"
+                        class="input input__password input__password--active"
+                        placeholder="Password"
+                      />
+                      <label class="eye" for="password"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">Full</div>
+                    <div class="_column">
+                      <div class="row _input _eye">
+                        <input
+                          type="text"
+                          id="password"
+                          class="input input--full input__password"
+                          placeholder="Password"
+                        />
+                        <label class="eye" for="password"></label>
+                      </div>
+                      <div class="row _eye _input">
+                        <input
+                          type="password"
+                          class="
+                            input
+                            input--full
+                            input__password
+                            input__password--full
+                            input__password--off
+                          "
+                          placeholder="Password"
+                        />
+                        <label class="eye eye--off" for="password"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type">
+                    <div class="type">Error</div>
+                    <div class="_input _error _eye">
+                      <input
+                        type="password"
+                        class="input input--error input__password"
+                        id="error"
+                        placeholder="Password"
+                      />
+                      <label for="error" class="label__error">Error text</label>
+                      <label class="eye" for="password"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="type__items">
+                  <div class="input__type"> 
+                    <div class="type">Diasabled</div>
+                    <div class="row _input _eye">
+                      <input
+                        type="password"
+                        class="input input__password input__password--disabled"
+                        placeholder="Password"
+                        disabled
+                      />
+                      <label class="eye eye--disabled" for="password"></label>
                     </div>
                   </div>
                 </div>

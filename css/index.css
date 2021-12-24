@@ -221,6 +221,10 @@ select {
   background-position-x: calc(100% - 17px);
 }
 
+.select option li {
+  padding: 12px 25px;
+}
+
 .select--hover:hover {
   background: url("../strelka--hover.svg") no-repeat right;
   background-position-x: calc(100% - 17px);
@@ -235,9 +239,43 @@ select {
   color: #0f1b33;
 }
 
-.select:disabled {
-  border-color: #ebeef5;
-  color: #c2cde6;
+._selector ul li.option:hover {
+  background: #f7f8fa;
+  color: #0f1b33;
+}
+
+._selector {
+  min-width: 200px;
+}
+
+._selector ul li.option {
+  z-index: 1;
+  color: #939aab;
+  border-radius: 7px;
+  padding: 7px 10px 7px 15px;
+  list-style: none;
+}
+
+#selectbox:not(.closed) {
+  border: 1px solid #abb4cb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+}
+
+._selector ul.closed li.option {
+  display: none;
+}
+
+._selector ul.closed li:first-child {
+  border: 1px solid #d7dff2;
+  background: url("../strelka.svg") no-repeat right;
+  background-position-x: calc(100% - 17px);
+  display: block;
+}
+
+._selector ul li {
+  cursor: default;
 }
 
 /*-------------------------------password-----------------------------*/

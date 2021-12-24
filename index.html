@@ -144,11 +144,13 @@
                   <div class="input__type">
                     <div class="type">selector</div>
                     <div class="row _select">
-                      <select type="text" class="select select--selector">
-                        <option value="1">Placeholder 1</option>
-                        <option value="2">Placeholder 2</option>
-                        <option value="3">Placeholder 3</option>
-                      </select>
+                      <div class="_selector">
+                        <ul  id="selectbox" class="closed">
+                          <li values="1" class="option">Dropdown one</li>
+                          <li values="2" class="option">Dropdown two</li>
+                          <li values="3" class="option">Dropdown three</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -183,7 +185,7 @@
                         class="input input__password"
                         placeholder="Password"
                       />
-                      <label class="eye " for="password"></label>
+                      <label class="eye" for="password"></label>
                     </div>
                   </div>
                 </div>
@@ -255,16 +257,18 @@
                       <input
                         type="password"
                         class="input input--error input__password"
-                        id="error"
+                        id="error--input"
                         placeholder="Password"
                       />
-                      <label for="error" class="label__error">Error text</label>
+                      <label for="error--input" class="label__error"
+                        >Error text</label
+                      >
                       <label class="eye" for="password"></label>
                     </div>
                   </div>
                 </div>
                 <div class="type__items">
-                  <div class="input__type"> 
+                  <div class="input__type">
                     <div class="type">Diasabled</div>
                     <div class="row _input _eye">
                       <input
@@ -283,5 +287,6 @@
         </div>
       </main>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
